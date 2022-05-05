@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "concurrently \"cd header && yarn webpack serve\" \"cd shell &&  yarn webpack serve\""
+  },
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "svg-inline-loader": "^0.8.2"
+  }
+}
