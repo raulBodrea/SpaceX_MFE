@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "concurrently \"cd header && yarn webpack serve\" \"cd shell &&  yarn webpack serve\""
+    "start": "concurrently \"cd header && yarn webpack serve\" \"cd shell &&  yarn webpack serve\"",
+    "install:deps": "cd header && rm -rf node_modules && rm yarn.lock && yarn && cd ../shell && rm -rf node_modules && rm yarn.lock && yarn && cd .. && rm -rf node_modules && rm yarn.lock && yarn"
   },
   "dependencies": {
     "concurrently": "^7.1.0",
